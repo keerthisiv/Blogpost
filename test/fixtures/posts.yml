@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: Post1
+  text: This is a test post
+
+two:
+  title: Post2
+  text: Trying to get started with fixtures here

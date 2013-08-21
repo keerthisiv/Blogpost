@@ -1,0 +1,30 @@
+<div class="page-header"><h1>Posts</h1></div>
+<a><%= link_to 'New post', new_post_path, class: "btn btn-success" %></a> 
+<a><%= link_to 'Micropost', microposts_path, class: "btn btn-success" %></a> 
+
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+    <th colspan="2"></th>
+  </tr>
+ 
+<% @posts.each do |post| %>
+  <tr>
+    <td><%= post.title %></td>
+    <td><%= post.text %></td>
+    <td><%= time_ago_in_words(post.created_at) + " ago" %></td>
+    <td><%= link_to 'Show', post %></td>
+    <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    <td><%= link_to 'Destroy', post_path(post),
+                    method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+  <% m = @micropost.where(post_id: post.id) %>
+  <% m.each do |micropost| %>
+  <tr>
+   <td><%= micropost.content %></td>
+ </tr>
+ <% end %>
+<% end %>
+</table>
