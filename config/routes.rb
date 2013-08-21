@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Blogpost::Application.routes.draw do
   
   resources :microposts
@@ -16,6 +17,15 @@ Blogpost::Application.routes.draw do
   # get 'posts' => 'posts#index'
 
   # delete 'posts/:id' => 'posts#destroy'
+=======
+FirstApp::Application.routes.draw do
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
+
+  # You can have the root of your site routed with "root"
+  # root 'welcome#index'
+
+>>>>>>> 18790f54b3f56d79ec372676aebe65856eb09467
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

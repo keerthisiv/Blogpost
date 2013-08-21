@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Blogpost::Application.configure do
+=======
+FirstApp::Application.configure do
+>>>>>>> 18790f54b3f56d79ec372676aebe65856eb09467
   # Settings specified here will take precedence over those in config/application.rb.
 
   # The test environment is used exclusively to run your application's
